@@ -52,15 +52,41 @@
     border-radius: 50px;
     align-items: center;
     fill: #5cadd3;
+    animation: rotate 3s infinite linear;
+    
 
-    svg {
+    &::after {
+        content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='rgb(127, 223, 255)' width='7px' height='7px'><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z'/></svg>");
+        display: block;
+        position: relative;
+        z-index: 2;
+        border: 2px solid white;
+        top: -23px;
+        
+    }
+
+    & svg {
         display: flex;
         position: relative;
-        height: 20px;
-        width: 20px;
+        height: 50px;
+        width: 50px;
         border-radius: 0px;
         border: none;
         left: 19%;
-     
+        animation-name: no-rotation;
+        animation : no-rotation 3s infinite linear;
+    }
+
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes no-rotation {
+    100% {
+        transform: rotate(-360deg);
     }
 }
