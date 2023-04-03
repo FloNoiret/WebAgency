@@ -1,0 +1,116 @@
+.hero-banner {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 400px;
+    place-items: center;
+}
+
+//Image
+.hero-image-div {
+    grid-area: 1 / 1 / 2 / 5;
+
+    li {
+        text-decoration: none;
+    }
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+}
+
+.hero-banner-1 {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    opacity: 1;
+
+
+}
+
+.hero-banner-2 {
+    display: flex;
+    position: relative;
+    z-index: -1;
+    opacity: 1;
+    
+}
+
+#hero-banner-1:target {
+    z-index: 1;
+    
+}
+
+#hero-banner-2:target {
+    z-index: 0;
+}
+
+#hero-banner-1, #hero-banner-2{
+    margin-top: -6rem;
+    padding-top: 6rem;
+}
+
+//Text
+.hero-text-div {
+    grid-area: 1 / 2 / 2/ 3;
+    z-index: 2;
+}
+
+.hero-text {
+    display: grid;
+    color: white;
+    font-size: auto;
+
+}
+
+.hero-text-h1 {
+    text-transform: uppercase;
+}
+
+.hero-text-h1::before {
+    content: "WebAgency";
+    color: rgb(127, 223, 255);
+
+}
+
+// Arrows
+
+.hero-arrows {
+    cursor: pointer;
+    background-color: rgba(11, 10, 10, 0.158);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 2;
+    padding-left: 10px;
+    padding: 10%;
+    
+}
+
+.hero-arrows-svg {
+    fill: white;
+    height: 30px;
+}
+
+
+.hero-arrows-left-div {
+    grid-area: 1 / 1 / 2 / 2;
+
+
+}
+
+.hero-arrows-left {
+    display: grid;
+    justify-self: left;
+}
+
+.hero-arrows-right-div {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.hero-arrows-right {
+    justify-self: right;
+    transform: rotate(180deg);
+}

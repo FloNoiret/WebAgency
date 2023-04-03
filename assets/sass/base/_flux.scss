@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+#services, #portfolio, #contact {
+    margin-top: -4rem;
+    padding-top: 3rem;
+}

@@ -1,0 +1,31 @@
+//Header
+@media screen and (max-width: 594px) {
+    header {
+        margin: 0 0 0 0;
+        height: 5rem;
+    }
+}
+
+// Navbar
+@media screen and (max-width: 733px) {
+
+    nav,
+    ul,
+    li {
+        display: none
+    }
+}
+
+
+// Home Banner
+@media screen and (max-width: 594px) {
+    .hero-banner {
+        grid-template-rows: 400px;
+    }
+}
+
+// Passer le texte sous l'img + color black
+
+
+
+

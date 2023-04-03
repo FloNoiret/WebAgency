@@ -1,0 +1,81 @@
+.home-banner {
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+
+}
+
+// Image
+.home-banner-img {
+    height: 130%;
+    width: 130%;
+    margin: -1px -1px -1px -1px;
+    display: block;
+    filter: blur(2px);
+    position:relative;
+
+}
+
+//Grid CSS
+.home-banner-column {
+    display:grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    position: absolute;
+    z-index:2;
+}
+
+// Bloc Text
+.home-banner-text {
+    top: 30%;
+    font-size: auto;
+    color: white;
+    min-height: 10em;
+    max-width: 40%;
+    grid-column: 2;
+
+}
+
+.home-banner-h1 {
+    font-size: auto;
+    text-transform: uppercase;
+}
+
+.home-banner-h1::before {
+    content: "WebAgency";
+    color: rgb(127, 223, 255);
+}
+
+// Image Person
+.home-banner-person {
+    grid-column:4;
+    top: 10%;
+    height: 120%;
+    max-width: 50%;
+}
+
+// Arrows
+
+.home-banner-arrow {
+    top: 50%;
+    position: absolute;
+    height: 30px;
+    cursor: pointer;
+    
+
+}
+
+.home-banner-arrow-right {
+    grid-column: 1;
+    right: 0%;
+}
+
+.home-banner-arrow-left {
+    grid-column: 4;
+    transform: rotate(180deg);
+    left: 0%;
+}
+
+/// repasser en absolute sur les éléments

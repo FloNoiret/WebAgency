@@ -1,0 +1,25 @@
+@use "../utils/colors" as utils;
+
+button {
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.btn-blue {
+    @include utils.background-blue;
+    border: transparent;
+    border-radius: 2px;
+    width: 20%;
+    color: white;
+    cursor: pointer;
+    height: 28px;
+    font-size: 12px;
+
+}
+
+.btn-blue:hover {
+    border-bottom: 3px solid #5cadd3;
+}

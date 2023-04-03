@@ -1,0 +1,32 @@
+@use "../utils/colors" as utils;
+
+// Contact Maps Form
+input{
+    width: 90%;
+    margin-top:2%;
+
+}
+
+textarea {
+    width: 90%;
+    margin-top: 2%;
+    height: 20%;
+}
+
+.btn-form {
+    width: 50%;
+    color:white;
+    @include utils.background-blue;
+    border-left: 2px;
+    border-top: 1px;
+    border-color: rgba(0, 191, 255, 0.616);
+    height: 10%;
+    cursor: pointer;
+    //box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.532);
+}
+address {
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}

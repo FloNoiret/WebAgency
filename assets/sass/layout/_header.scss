@@ -1,0 +1,57 @@
+@use "../utils/colors" as utils;
+
+.header-sticky {
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 3;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 33% 1fr 33%;
+    grid-template-rows: 5rem;
+    place-items: center;
+    width: 100%;
+}
+
+
+// Main Navigation Menu
+nav {
+    display: grid;
+    grid-column-start: 3;
+    height: 100%;
+    align-items: center;
+}
+
+.li-nav {
+    display: inline;
+    grid-column-start: 3;
+    padding: 10px;
+    cursor: pointer;
+    right: 0;
+    height: 100%;
+
+    a {
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        border-top: 1px solid transparent;
+    }
+
+    &:hover a {
+        @include utils.secondary-color;
+        border-top: 5px solid #5cadd3;
+        height: 100%;
+        padding-top: 26px;
+    }
+}
+
+// LOGO 
+
+.header-logo {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0.2rem 0.5rem 0.2rem 0rem; 
+}
