@@ -114,3 +114,12 @@
     justify-self: right;
     transform: rotate(180deg);
 }
+
+//RESPONSIVE
+
+@media screen and (max-width: 800px) {
+    .hero-text {
+        font-size: 10px;
+    
+    }
+}

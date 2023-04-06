@@ -23,3 +23,12 @@ button {
 .btn-blue:hover {
     border-bottom: 3px solid #5cadd3;
 }
+
+
+// RESPONSIVE
+@media screen and (max-width: 800px) {
+    .btn-blue {
+        height: 10px;
+        font-size: 3px;
+    }
+}
