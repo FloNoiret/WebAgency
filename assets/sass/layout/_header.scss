@@ -17,7 +17,7 @@ header {
 
 
 // Main Navigation Menu
-nav {
+.nav-header {
     display: grid;
     grid-column-start: 3;
     height: 100%;
@@ -54,4 +54,57 @@ nav {
     width: auto;
     height: auto;
     margin: 0.2rem 0.5rem 0.2rem 0rem; 
+}
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 800px) {
+    header {
+        display: flex; 
+        position: relative;
+        margin: 0 0 0 0;
+        height: 120px;
+
+        justify-content: center;
+    }
+
+    .nav-header {
+        display: flex;
+        position : absolute;
+        top : 80px; 
+        height: auto;
+        align-items: center;
+    }
+    
+    .li-nav {
+        display: inline;
+        padding-left: 0.1rem;
+        cursor: pointer;
+        right: 0;
+        height: auto;
+        font-size: auto;
+    
+        a {
+            text-decoration: none;
+            color: black;
+            height: auto;
+            font-size: auto; 
+            border-top: 0px solid transparent;
+        }
+    
+        &:hover a {
+            @include utils.secondary-color;
+            border-top: 0px solid transparent;
+            height: auto;
+            padding-top: 1px;
+        }
+    }
+
+    .header-logo {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: 0; 
+    }
 }
