@@ -90,3 +90,24 @@
         transform: rotate(-360deg);
     }
 }
+
+
+//RESPONSIVE
+
+
+@media screen and (max-width: 800px) {
+    .column-services {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70%;
+        width: 70%;
+        left: 15%;
+    }
+
+    .services-icon {
+        visibility: hidden;
+    }
+}

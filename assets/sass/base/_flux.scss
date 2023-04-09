@@ -10,7 +10,22 @@ ul {
     padding-left: 0;
 }
 
-#services, #portfolio, #contact {
+#services,
+#portfolio,
+#contact {
     margin-top: -4rem;
     padding-top: 3rem;
+}
+
+
+//RESPONSIVE
+
+@media screen and (max-width: 800px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
 }

@@ -39,3 +39,24 @@
 .maps-contact-title {
     align-content: left;
 }
+
+
+//RESPONSIVE
+
+@media screen and (max-width: 800px) {
+    .maps-contact-form {
+        display: flex; 
+        position: absolute; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+        width: 70%;
+        left: 15%;
+        right: 10%;
+    }
+
+    .maps-contact-layout {
+        padding-left: 0%;
+    }
+}
